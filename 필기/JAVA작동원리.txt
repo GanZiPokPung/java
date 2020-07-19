@@ -1,0 +1,7 @@
+Java Source code(.java) =(Compile)=> Java App(.class) 
+=(Run)=> Java Virtual Machine =(Run)=> Computer 
+
+Source code라는 인간이 이해할 수 있는 java 언어로 작성된 코드를
+Java App으로 컴파일하여 .class로 변환시키고
+변환한 내용을 Java Virtual Machine에 작동시켜 
+Computer가 Source code 동작에 맞게 돌아간다.
