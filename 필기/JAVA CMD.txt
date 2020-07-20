@@ -1,0 +1,9 @@
+-cp => --class -path
+
+javac -cp ".;lib" <source file> => 라이브러리를 포함 소스파일 실행
+
+java <source file> => 소스파일 실행
+
+dir => 폴더 경로 안의 모든 파일을 보여줌
+
+cd => 경로 변경

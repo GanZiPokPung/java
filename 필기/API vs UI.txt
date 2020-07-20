@@ -1,0 +1,16 @@
+
+Computer <=> OS <=> JAVA <=(API)=> JAVA Program <=(UI)=>  User
+
+API => Application Programming Interface
+프로그램을 사용하기 위해 응용하는 것, 조작하는 것 
+
+프로그램을 잘 만들기 위해서는, 어떻게 사용하고 잘 다루는가가 중요하다.
+
+Application (부품들에 대한 응용이 강조된 표현)
+Programming (시간이 강조된 표현)
+
+
+UI => User Interface
+사용자의 입력으로 Program을 사용할 수 있도록 해주는 도구
+
+하지만 UI를 사용자가 아닌 프로그램 개발에 사용한다면 API가 된다.
