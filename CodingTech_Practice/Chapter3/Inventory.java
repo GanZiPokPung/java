@@ -79,4 +79,53 @@ class Inventory {
 		
 		return Collections.binarySearch(list, new Supply(name)) != -1;
 	}
+	
 }
+
+class Inventory {
+
+	List<Supply> supplies;
+
+	/**
+	 * 새 Inventory의 생성자
+	 */
+	Inventory() {
+		this(new ArrayList<>());
+	}
+
+	/**
+	 * 새 Inventory의 또 다른 생성자
+	 * 
+	 * 제품을 Inventory에 추가할 수 있는 생성자
+	 */
+	Inventory(Collection<Supply> initialSupplies) {
+		this.supplies = new ArrayList<>(initialSupplies);
+	}
+}
+
+class Inventory {
+
+	List<Supply> supplies;
+
+	/**
+	 * 빈 재고를 생성한다.
+	 * 
+	 * @see Inventory#Inventory(Collection) 초기 제품을 초기화하는 함수
+	 */
+	Inventory() {
+		this(new ArrayList<>());
+	}
+
+	/**
+	 * 제품을 처음으로 선적한 재고를 생성한다.
+	 * 
+	 * @param initialSupplies	제품을 초기화한다.
+	 * 						   	널이면 안 되고 빌 수 있다.
+	 * @throws NullPointerException initialSupplies가 널일 때
+	 * @see Inventory#Inventory() 제품없이 초기화하는 함수
+	 */
+	Inventory(Collection<Supply> initialSupplies) {
+		this.supplies = new ArrayList<>(initialSupplies);
+	}
+}
+
