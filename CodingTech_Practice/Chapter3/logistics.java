@@ -72,3 +72,32 @@ interface CargoShip {
 	
 	int getRemainingCapacity();
 }
+
+interface CargoShip {
+	Stack<Supply> unload();
+	/**
+	 * 제품을 화물선에 싣는다.
+	 * 
+	 * <p>
+	 * 남은 용량만큼만 제품을 싣게 해준다.
+	 * 
+	 * 예:
+	 * <pre>
+	 * int capacity = cargoShip.getRemainingCapacity(); // 1
+	 * Queue&lt;Supply> supplies = Arrays.asList(new Supply("Apple"));
+	 * Queue&lt;Supply> spareSupplies = cargoShip.load(supplies);
+	 * spareSupplies.isEmpty(); // 참
+	 * cargoShip.getRemainingCapacity() == 0; // 참
+	 * </pre>
+	 * 
+	 * @param 적재할 제품; 널이면 안된다.
+	 * @return 용량이 작아 실을 수 없었던 제품;
+	 * 			모두 실었다면 empty
+	 * @throws 제품이 널이면 NullPointerException;
+	 * @see CargoShip#getRemainingCapacity() 용량을 확인하는 함수
+	 * @see CargoShip#unload() 제품을 내리는 함수
+	 */
+	Queue<Supply> load(Queue<Supply> supplies);
+	
+	int getRemainingCapacity();
+}
